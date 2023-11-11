@@ -25,8 +25,8 @@ function TodoList() {
     setTodos(updatedTodos);
   };
 
-  return (
-    <div>
+    return (
+    <div className='appcontainer'>
       <h1>Todo List App</h1>
       <div>
         <input

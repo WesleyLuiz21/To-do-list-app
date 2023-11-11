@@ -1,5 +1,7 @@
 // src/components/TodoItem.js
 import React from 'react';
+import { BiCheck } from 'react-icons/bi';
+import { MdDelete } from 'react-icons/md';
 
 function TodoItem({ index, todo, markComplete, deleteTodo }) {
   return (
@@ -11,8 +13,8 @@ function TodoItem({ index, todo, markComplete, deleteTodo }) {
       >
         {todo.text}
       </span>
-      <button onClick={() => markComplete(index)}>Complete</button>
-      <button onClick={() => deleteTodo(index)}>Delete</button>
+      <button className='check-btn' onClick={() => markComplete(index)}><BiCheck/></button>
+      <button className='delete-btn' onClick={() => deleteTodo(index)}><MdDelete/></button>
     </li>
   );
 }

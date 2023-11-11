@@ -1,7 +1,16 @@
-
-
 .App {
     margin: 0 auto;
     text-align: center;
+    height: auto;
+
+}
+body {
+    background-color: #404041;
+}
+.appcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
