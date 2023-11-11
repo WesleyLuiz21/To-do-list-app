@@ -1,16 +1,21 @@
+body {
+    margin: 0 auto;
+    background-color: #404041;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#root {
+    background-color: aliceblue;
+    padding: 10px 40px;
+    border-radius: 7px;
+}
 .App {
     margin: 0 auto;
     text-align: center;
     height: auto;
 
-}
-body {
-    background-color: #404041;
-}
-.appcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 

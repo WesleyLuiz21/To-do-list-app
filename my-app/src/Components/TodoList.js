@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import TodoItem from './TodoItem';
+import { GrFormAdd } from 'react-icons/gr';
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -35,7 +36,7 @@ function TodoList() {
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <button onClick={addTodo}>Add</button>
+        <button onClick={addTodo}>Add<GrFormAdd /></button>
       </div>
       <ul>
         {todos.map((todo, index) => (
